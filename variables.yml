@@ -1,10 +1,16 @@
 - name: Variable demo
   hosts: localhost
   connection: local
-  vars:
+  vars: #play level
     a: 100
     b: 200
-  tasks:
+  tasks: #task level
     - name: Print variable
+      ansible.builtin.debug:
+        msg: a - {{a}}
+
+    - name: Print variable
+      vars:
+        a:200
       ansible.builtin.debug:
         msg: a - {{a}}
