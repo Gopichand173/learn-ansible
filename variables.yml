@@ -11,6 +11,6 @@
 
     - name: Print variable
       vars:
-        a:200
+        a: 200
       ansible.builtin.debug:
         msg: a - {{a}}
