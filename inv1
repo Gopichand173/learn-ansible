@@ -1,0 +1,7 @@
+[PROD]
+server1.dev.gdevops72.com
+server2.dev.gdevops72.com
+
+[UAT]
+example1.dev.gdevops72.com
+example2.dev.gdevops72.com
